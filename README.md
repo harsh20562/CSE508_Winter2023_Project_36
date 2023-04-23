@@ -33,11 +33,22 @@ To get started with the Fine-Grained Fake News Detection System, you will need t
 
 Once you have these packages installed, you can download the Fine-Grained Fake News Detection System code from this GitHub repository. You will also need to download the dataset of labeled real and fake news articles, which is available for free online.
 
-
 ## Using the System
 To use the Fine-Grained Fake News Detection System, you can run the any of the notebook files in your Python environment or Jupyter Notebook environment. Pro Tip - Use Google Colab for best hassle free experience
 
 You can also modify the system's parameters and hyperparameters to improve its performance. For example, you can adjust the training data, change the NLP techniques used, or experiment with different machine learning algorithms.
+
+# Acess to submissions
+## [Baseline](https://github.com/harsh20562/CSE508_Winter2023_Project_36/tree/main/Baseline)
+We established our problem statement and found the literture to take motivation and inspiration from and tried to mimick the baseline results implemented in them. We got familar with the dataset and learnt about the domain knowledge of the project we are working on.
+
+## [Mid Project Review](https://github.com/harsh20562/CSE508_Winter2023_Project_36/tree/main/Mid%20Project%20Review)
+Here we updated our problem statement and along with that our approach to solve it and provided the updated baseline results we developed along with the evidence of improvements over last deadline. We used word embeddings and POS taggings to further improve our results.
+
+## [Final Submission](https://github.com/harsh20562/CSE508_Winter2023_Project_36/tree/main/Final%20Submission)
+Here we proposed and executed the fully completed final methods for our problems. More specifically it contains models LSTM, CNN and BiLSTMs with following two approaches of inputs
+- Statements
+- Statements + POS
 
 ## Conclusion
 The Fine-Grained Fake News Detection System is a powerful tool for identifying fake news articles with high accuracy. Its combination of machine learning algorithms and NLP techniques allows it to analyze the content of news articles and identify features that are indicative of fake news. By using this system, you can help prevent the spread of misinformation and ensure that news articles are accurate and reliable.
