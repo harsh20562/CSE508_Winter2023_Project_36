@@ -2,9 +2,9 @@
 Fine-Grained Fake News Detection System developed by Group-36 of IIITD CSE508 Course (Information Retrieval. 
 
 Contributors of the project are: 
-- Ayush Sharma
 - Anas Ahmad
 - Anupam Narayan
+- Ayush Sharma
 - Harsh Goyal
 - Shivam Jindal
 
