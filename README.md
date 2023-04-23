@@ -40,15 +40,19 @@ You can also modify the system's parameters and hyperparameters to improve its p
 
 # Acess to submissions
 ## [Baseline](https://github.com/harsh20562/CSE508_Winter2023_Project_36/tree/main/Baseline)
-We established our problem statement and found the literture to take motivation and inspiration from and tried to mimick the baseline results implemented in them. We got familar with the dataset and learnt about the domain knowledge of the project we are working on.
+We established our problem statement and found the literture to take motivation and inspiration from and tried to mimick the baseline results implemented in them. We got familar with the dataset and learnt about the domain knowledge of the project we are working on. We used TFIDF (compute TFIDF matrix for the given text data) and CountVectorizer (makes the raw count matrix for the given text data) methods to convert textual data to numerical data and fed the numerical data to various machine learning models like Logistic Regression, SVMs, Decision Trees, Random Forests, etc.
+
 
 ## [Mid Project Review](https://github.com/harsh20562/CSE508_Winter2023_Project_36/tree/main/Mid%20Project%20Review)
-Here we updated our problem statement and along with that our approach to solve it and provided the updated baseline results we developed along with the evidence of improvements over last deadline. We used word embeddings and POS taggings to further improve our results.
+Here we updated our problem statement and along with that our approach to solve it and provided the updated baseline results we developed along with the evidence of improvements over last deadline. We calculated POS taggings for the given text data and used TFIDF and CountVectorizer on the POS taggings to convert textual data to numerical data and fed this data to various machine learning models like Logistic Regression, Multi Layer Perceptron, etc.
+We computed non-contextual word embeddings using GloVe embeddings which converts textual data to 100 dimensional vector. We also computed contextual embeddings using sentence transformer model all-MiniLM-L6-v2 which converts textual data to 384 dimensional vector for each token based on the context of the sentence. We gave non-contextual and contextual word embeddings as input to various machine learning models.
+
 
 ## [Final Submission](https://github.com/harsh20562/CSE508_Winter2023_Project_36/tree/main/Final%20Submission)
-Here we proposed and executed the fully completed final methods for our problems. More specifically it contains models LSTM, CNN and BiLSTMs with following two approaches of inputs
-- Statements
-- Statements + POS
+Here we proposed and executed the fully completed final methods for our problems. More specifically it contains models LSTM, CNN and BiLSTMs with following two approaches of inputs statements and statements with POS
+- RNNs - We first tokenize the statements using the BERT tokenizer, and trains an RNN-based BERT model to predict the labels. The model consists of a BERT layer followed by an RNN layer The RNN part of the code is responsible for processing the output of the BERT layer and producing a final output for the model. Specifically, the RNN layer used in this code is a Bidirectional LSTM (Long Short-Term Memory) layer. The model is trained for 3 epochs using a batch size of 32, and the test accuracy is reported at the end. 
+- CNN / LSTM / Bi-LSTM - For all these models, we created POS encodings for the preprocessed data. We passed the textual data and POS encodings to Embedding() layer to get the embeddings and passed these embeddings as input to the these models. We used categorical_crossentropy as loss function. We ran these models using two approaches - only giving embeddings of statement as input and giving embeddings of text as well as POS encodings as input to these models.
+
 
 ## Conclusion
 The Fine-Grained Fake News Detection System is a powerful tool for identifying fake news articles with high accuracy. Its combination of machine learning algorithms and NLP techniques allows it to analyze the content of news articles and identify features that are indicative of fake news. By using this system, you can help prevent the spread of misinformation and ensure that news articles are accurate and reliable.
