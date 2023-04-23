@@ -38,7 +38,7 @@ To use the Fine-Grained Fake News Detection System, you can run the any of the n
 
 You can also modify the system's parameters and hyperparameters to improve its performance. For example, you can adjust the training data, change the NLP techniques used, or experiment with different machine learning algorithms.
 
-# Acess to submissions
+# Access to submissions
 ## [Baseline](https://github.com/harsh20562/CSE508_Winter2023_Project_36/tree/main/Baseline)
 We established our problem statement and found the literture to take motivation and inspiration from and tried to mimick the baseline results implemented in them. We got familar with the dataset and learnt about the domain knowledge of the project we are working on. We used TFIDF (compute TFIDF matrix for the given text data) and CountVectorizer (makes the raw count matrix for the given text data) methods to convert textual data to numerical data and fed the numerical data to various machine learning models like Logistic Regression, SVMs, Decision Trees, Random Forests, etc.
 
